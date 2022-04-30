@@ -373,7 +373,7 @@ def tranfer_to_ori_mesh(filename_ori, filename_remesh, pred_rig):
 
 
 if __name__ == '__main__':
-    input_folder = "quick_start/"
+    input_folder = "data/obj_file"
 
     # downsample_skinning is used to speed up the calculation of volumetric geodesic distance
     # and to save cpu memory in skinning calculation.
@@ -416,8 +416,9 @@ if __name__ == '__main__':
     # To process other input characters, please first try the learned bandwidth (0.0429 in the provided model), and the default threshold 1e-5.
     # We also use these two default parameters for processing all test models in batch.
 
+    model_id, bandwidth, threshold = "sample", 0.04, 2e-5
     #model_id, bandwidth, threshold = "smith", None, 1e-5
-    model_id, bandwidth, threshold = "17872", 0.045, 0.75e-5
+    # model_id, bandwidth, threshold = "17872", 0.05, 0.75e-5
     #model_id, bandwidth, threshold = "8210", 0.05, 1e-5
     #model_id, bandwidth, threshold = "8330", 0.05, 0.8e-5
     #model_id, bandwidth, threshold = "9477", 0.043, 2.5e-5

@@ -82,7 +82,7 @@ def getGeometryGroups():
     
 if __name__ == '__main__':
     #model_id = "17872"
-    model_id = "smith"
+    model_id = "sample"
     print(model_id)
     obj_name = 'D:\\{:s}_ori.obj'.format(model_id)
     info_name = 'D:\\{:s}_ori_rig.txt'.format(model_id)
