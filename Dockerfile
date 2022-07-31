@@ -44,7 +44,7 @@ SHELL ["/bin/bash", "-c", "-i","-l"]
 RUN conda init bash && source /root/.bashrc && conda create --name rignet_cuda11 python=3.6 && conda activate rignet_cuda11
 RUN echo "conda activate rignet_cuda11" >> ~/.bashrc
 
-RUN conda activate rignet_cuda11 && pip install open3d==0.9.0 "rtree>=0.8,<0.9" trimesh[easy] numpy scipy matplotlib tensorboard opencv-python
+RUN conda activate rignet_cuda11 && pip install open3d==0.9.0 "rtree>=0.8,<0.9" trimesh[all] numpy scipy matplotlib tensorboard opencv-python
     
 RUN conda activate rignet_cuda11 && conda install -y -c pytorch pytorch==1.7.1 torchvision==0.8.2 cudatoolkit=11.0
 

@@ -373,7 +373,7 @@ def tranfer_to_ori_mesh(filename_ori, filename_remesh, pred_rig):
 
 
 if __name__ == '__main__':
-    input_folder = "data/obj_file"
+    input_folder = "data/rignet"
 
     # downsample_skinning is used to speed up the calculation of volumetric geodesic distance
     # and to save cpu memory in skinning calculation.
